@@ -1,0 +1,65 @@
+import time
+import random
+import json
+import os
+
+gender = [f"Boy", "Girl"]
+age = [f"13","14","15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"]
+height = [f"4'9", "5'0", "5'1", "5'2", "5'3", "5'4", "5'5", "5'6", "5'7", "5'8", "5'9", "6'0"]
+hair_color = [f"Burnt Sienna", "Camel", "Bronze", "Black", "Ginger", "Blonde", "Beige", "White", "Olive green", "Mint green", "Periwinkle", "Cerulan", "Tiffany Blue", "Powder Blue", "Peach", "Rouge", "Lavender", "Vermillion"]
+eye_color = [f"Burnt Sienna", "Camel", "Bronze", "Black", "Ginger", "Pale Gold", "White", "Olive green", "Mint green", "Periwinkle", "Cerulan", "Tiffany Blue", "Powder Blue", "Peach", "Rouge", "Lavender", "Vermillion"]
+weight = [f"Under", "Over", "Average", "Average", "Average"]
+ethnicity = [f"Asian", "European", "African", "Hispanic", "American"]
+skin_tone = [f"Light", "Medium", "Dark"]
+hair = [f"Long", "Short", "Medium-long", "Very short", "Very long"]
+hair_type = [f"Fluffy", "Poofy", "Curly", "Straight","Wavy"]
+first_name = [f"Gabe","Jordan","Raphael","Lucie","Alex","Cameron","Ali", "Angel", "August", "Aspen", "Gabriel", "Aaron", "Ollie", "Sammy", "Onyx", "Lex", "Leith", "Charlie", "Avery", "Harper", "Mune"]
+
+spin = random.choice(gender)
+spin2 = random.choice(age)
+spin3 = random.choice(height)
+spin4 = random.choice(hair_color)
+spin5 = random.choice(eye_color)
+spin6 = random.choice(weight)
+spin7 = random.choice(ethnicity)
+spin8 = random.choice(skin_tone)
+spin9 = random.choice(hair)
+spin11 = random.choice(hair_type)
+spin10 = random.choice(first_name)
+
+
+print("Welcome to character customization! Follow the next directions closely ")
+while True:
+  try:
+    gender_ask = int(input("type in a random number: "))
+  except ValueError:
+    time.sleep(1)
+    print("Type a number")
+    continue
+
+
+  print("You are a:", spin)
+  print("Your age is:", spin2)
+  print("Your height is:", spin3)
+  print("Your hair color is:", spin4)
+  print("Your eye color is:", spin5)
+  print("Your weight is:", spin6)
+  print("Your ancestors are:", spin7)
+  print("Your skin tone is:", spin8)
+  print("Your hair is:", spin9)
+  print("Your hair type is:", spin11)
+  print("Your name is:", spin10)
+  break
+
+personality_1 = [f"Quiet", "Calm", "Passionate", "Fierce", "Tempered", "Indifferent", "Kind", "Mean", "Boastful", "Egotistic", "Arrogant", "Self-Centered"]
+personality_2 = [f"Smart", "Tough", "Sweet", "Clever", "Outgoing", "Introverted", "Shy", "Emotional", "Mean", "Boastful", "Envious"]
+
+spin12 = random.choice(personality_1)
+spin13 = random.choice(personality_2)
+
+time.sleep(0.5)
+print("You are:",spin12, end="")
+print(" and", spin13)
+
+
+
