@@ -1,0 +1,63 @@
+import time
+import random
+
+def add():
+  def sum(a, b):
+      return (a + b)
+
+  a = int(input('Enter 1st number: '))
+  print("plus...")
+  b = int(input('Enter 2nd number: '))
+
+  print(f'Sum of {a} and {b} is {sum(a, b)}')
+
+def subtract():
+  def minus(c, d):
+      return(c - d)
+
+  c = int(input("Enter first number: "))
+  print("minus...")
+  d = int(input("Enter second number: "))
+
+  print(f"{c} minus {d} is {minus(c, d)}")
+
+def divide():
+  def result(e, f):
+    return(e / f)
+
+
+  try:
+    e = int(input("Enter first number: "))
+    print("divided by...")
+    f = int(input("Enter second number: "))
+
+  except ZeroDivisionError:
+    print("Can't divide by zero")
+
+  print(f"{e} divided by {f} is {result(e, f)}")
+
+def multiply():
+  def result2(g, h):
+    return(g * h)
+
+  g = int(input("Enter first number: "))
+  print("times...")
+  h = int(input("Enter second number: "))
+
+  print(f"{g} times {h} is {result2(g, h)}")
+
+
+
+choice = input("add, subtract, divide, or multiply? ")
+
+if choice.lower() == "add":
+  add()
+elif (choice.lower() == "subtract".lower()):
+  subtract()
+elif (choice.lower() == "divide".lower()):
+  divide()
+elif (choice.lower() == "multiply".lower()):
+  multiply()
+else:
+  print("Option does not exist")
+
